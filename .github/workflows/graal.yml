@@ -30,3 +30,5 @@ jobs:
           native-image --version
           docker ps
           ./gradlew :microservices:product-service:test --no-daemon
+          ./gradlew :microservices:product-service:bootBuildImage --no-daemon --debug
+
