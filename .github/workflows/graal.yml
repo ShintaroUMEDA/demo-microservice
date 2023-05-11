@@ -20,7 +20,7 @@ jobs:
           version: '21.1.0'
           java-version: '11'
           components: 'native-image'
-          github-token: ${{ secrets.MY_ACTIONS_SECRET }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Example step
         run: |
           echo "GRAALVM_HOME: $GRAALVM_HOME"
