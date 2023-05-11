@@ -28,4 +28,5 @@ jobs:
           java --version
           gu --version
           native-image --version
-          docker compose build
+          docker ps
+          ./gradlew :microservices:product-service:test --no-daemon
