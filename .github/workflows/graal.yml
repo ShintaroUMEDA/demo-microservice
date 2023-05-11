@@ -28,5 +28,6 @@ jobs:
           java --version
           gu --version
           native-image --version
+          docker info
           ./gradlew :microservices:product-service:bootBuildImage --stacktrace
 
