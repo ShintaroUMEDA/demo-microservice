@@ -25,6 +25,7 @@ jobs:
             rm ${graalvm_archive}.tar.gz
             export JAVA_HOME=$PWD/${graalvm_folder}
             export PATH=$JAVA_HOME/bin:$PATH
+            gu install native-image
       - name: Example step
         run: |
           java --version
