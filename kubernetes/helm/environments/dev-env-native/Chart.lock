@@ -1,0 +1,36 @@
+dependencies:
+- name: common
+  repository: file://../../common
+  version: 1.0.0
+- name: zookeeper
+  repository: file://../../components/zookeeper
+  version: 1.0.0
+- name: kafka
+  repository: file://../../components/kafka
+  version: 1.0.0
+- name: mongodb
+  repository: file://../../components/mongodb
+  version: 1.0.0
+- name: mysql
+  repository: file://../../components/mysql
+  version: 1.0.0
+- name: auth-server
+  repository: file://../../components/auth-server
+  version: 1.0.0
+- name: product
+  repository: file://../../components/product
+  version: 1.0.0
+- name: recommendation
+  repository: file://../../components/recommendation
+  version: 1.0.0
+- name: review
+  repository: file://../../components/review
+  version: 1.0.0
+- name: product-composite
+  repository: file://../../components/product-composite
+  version: 1.0.0
+- name: zipkin-server
+  repository: file://../../components/zipkin-server
+  version: 1.0.0
+digest: sha256:b68b2aaf5b7035b29a155ebf6e600efad770b84df441c9dbdf5fb688e8701ae5
+generated: "2023-05-10T14:03:31.193360015+09:00"

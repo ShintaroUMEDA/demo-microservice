@@ -1,0 +1,135 @@
+ingress:
+  host: minikube.me
+  paths:
+    - path: /oauth2
+      service: auth-server
+    - path: /login
+      service: auth-server
+    - path: /error
+      service: auth-server
+    - path: /product-composite
+      service: product-composite
+    - path: /actuator/health
+      service: product-composite
+    - path: /openapi
+      service: product-composite
+    - path: /webjars
+      service: product-composite
+
+secrets:
+
+  rabbitmq-server-credentials:
+    RABBITMQ_DEFAULT_USER: rabbit-user-dev
+    RABBITMQ_DEFAULT_PASS: rabbit-pwd-dev
+
+  rabbitmq-credentials:
+    SPRING_RABBITMQ_USERNAME: rabbit-user-dev
+    SPRING_RABBITMQ_PASSWORD: rabbit-pwd-dev
+
+  rabbitmq-zipkin-credentials:
+    RABBIT_USER: rabbit-user-dev
+    RABBIT_PASSWORD: rabbit-pwd-dev
+
+  mongodb-server-credentials:
+    MONGO_INITDB_ROOT_USERNAME: mongodb-user-dev
+    MONGO_INITDB_ROOT_PASSWORD: mongodb-pwd-dev
+
+  mongodb-credentials:
+    SPRING_DATA_MONGODB_AUTHENTICATION_DATABASE: admin
+    SPRING_DATA_MONGODB_USERNAME: mongodb-user-dev
+    SPRING_DATA_MONGODB_PASSWORD: mongodb-pwd-dev
+
+  mysql-server-credentials:
+    MYSQL_ROOT_PASSWORD: rootpwd
+    MYSQL_DATABASE: review-db
+    MYSQL_USER: mysql-user-dev
+    MYSQL_PASSWORD: mysql-pwd-dev
+
+  mysql-credentials:
+    SPRING_DATASOURCE_USERNAME: mysql-user-dev
+    SPRING_DATASOURCE_PASSWORD: mysql-pwd-dev
+
+mongodb:
+  envFromSecretRefs:
+    - mongodb-server-credentials
+
+mysql:
+  envFromSecretRefs:
+    - mysql-server-credentials
+
+auth-server:
+  envFromSecretRefs:
+    - rabbitmq-credentials
+
+product:
+  image:
+    name: native-product-service
+  env:
+    SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_0,kafka"
+  envFromSecretRefs:
+    - mongodb-credentials
+    # - rabbitmq-credentials    
+
+# product-green:
+#   image:
+#     name: native-product-service
+#   env:
+#     SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_1,kafka"
+#   envFromSecretRefs:
+#     - rabbitmq-credentials
+#     - mongodb-credentials
+
+recommendation:
+  image:
+    name: native-recommendation-service
+  env:
+    SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_0,kafka"
+  envFromSecretRefs:
+    - mongodb-credentials
+
+# recommendation-green:
+#   image:
+#     name: native-recommendation-service
+#   env:
+#     SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_1,kafka"
+#   envFromSecretRefs:
+#     - rabbitmq-credentials
+#     - mongodb-credentials
+
+review:
+  image:
+    name: native-review-service
+  env:
+    SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_0,kafka"
+  envFromSecretRefs:
+    # - rabbitmq-credentials
+    - mysql-credentials
+
+# review-green:
+#   image:
+#     name: native-review-service
+#   env:
+#     SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_1,kafka"
+#   envFromSecretRefs:
+#     - mysql-credentials
+#     - rabbitmq-credentials
+    
+product-composite:
+  image:
+    name: native-product-composite-service
+  env:
+    SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,kafka"
+  readinessProbe:
+    httpGet:
+      path: /actuator/info
+
+# destinationRules:
+#   - name: product-composite
+#   - name: auth-server
+#   - name: product
+#   - name: recommendation
+#   - name: review
+  
+zipkin-server:
+  envFromSecretRefs:
+    - rabbitmq-zipkin-credentials
