@@ -16,16 +16,11 @@ jobs:
             java-version: '11'
             distribution: 'adopt'
       - name: install dependencies
-        run: |
-            graalvm_version=21.1.0
-            graalvm_archive=graalvm-ce-java11-linux-amd64-${graalvm_version}
-            graalvm_folder=graalvm-ce-java11-${graalvm_version}
-            curl -L https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-${graalvm_version}/${graalvm_archive}.tar.gz > ${graalvm_archive}.tar.gz
-            tar -xvf ${graalvm_archive}.tar.gz
-            rm ${graalvm_archive}.tar.gz
-            export JAVA_HOME=$PWD/${graalvm_folder}
-            export PATH=$JAVA_HOME/bin:$PATH
-            gu install native-image
+        uses: umeda-shintaro/setup-graalvm@main
+        with:
+            version: '21.1.0'
+            java-version: '11'
+            components: 'native-image'
       - name: Example step
         run: |
           java --version
