@@ -29,4 +29,4 @@ jobs:
           echo "JAVA_HOME: $JAVA_HOME"
           java --version
           gu --version
-          native-image --version
+          ./gradlew :microservices:product-service:bootBuildImage --no-daemon
