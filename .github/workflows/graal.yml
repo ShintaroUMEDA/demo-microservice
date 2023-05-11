@@ -17,10 +17,12 @@ jobs:
       - name: install dependencies
         uses: umeda-shintaro/setup-graalvm@main
         with:
-            version: '21.1.0'
-            java-version: '11'
-            components: 'native-image'
-            github-token: ${{ secrets.GITHUB_TOKEN }}
+          # GraalVM version, no pattern syntax available atm
+          graalvm: '21.0.0.2'
+          # Java version, optional, defaults to 'java8'. Available options are 'java8' and 'java11'.
+          java: 'java11'
+          # Architecture flag, optional, defaults to 'amd64'. Available options are 'amd64' and 'aarch64'. Later is available only for linux runners.
+          arch: 'amd64'
       - name: Example step
         run: |
           echo "GRAALVM_HOME: $GRAALVM_HOME"
