@@ -9,13 +9,16 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
-      - uses: graalvm/setup-graalvm@v1
-        with:
-          version: '21.1.0'
-#           gds-token: ${{ secrets.GDS_TOKEN }}
-          java-version: '11'
-          components: 'native-image'
-#           github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: install dependencies
+        run: |
+            graalvm_version=21.1.0
+            graalvm_archive=graalvm-ce-java11-linux-amd64-${graalvm_version}
+            graalvm_folder=graalvm-ce-java11-${graalvm_version}
+            curl -L https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-${graalvm_version}/${graalvm_archive}.tar.gz > ${graalvm_archive}.tar.gz
+            tar -xvf ${graalvm_archive}.tar.gz
+            rm ${graalvm_archive}.tar.gz
+            export JAVA_HOME=$PWD/${graalvm_folder}
+            export PATH=$JAVA_HOME/bin:$PATH
       - name: Example step
         run: |
           java --version
