@@ -14,5 +14,5 @@ jobs:
       run: |
         ls -al /var/run/
         ls -al /var/run/docker/
-        sudo ln -s /var/run/docker/docker.sock /var/run/docker.sock
+        sudo ln -s /var/run/docker/* /var/run/*
         ls -al /var/run/
