@@ -30,5 +30,6 @@ jobs:
           java --version
           gu --version
           native-image --version
+          ls -al /var/run/
           ./gradlew :microservices:product-service:bootBuildImage --stacktrace
 
