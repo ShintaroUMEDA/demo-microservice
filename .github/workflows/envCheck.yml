@@ -1,0 +1,16 @@
+name: Docker Image CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on:  self-hosted
+
+    steps:
+    - name: list items
+      run: |
+        ls -al /var/run/
+        ls -al /var/run/docker/
