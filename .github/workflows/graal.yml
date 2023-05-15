@@ -1,5 +1,4 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-      
+    
 name: GraalVM build
 on:
   workflow_dispatch:
@@ -21,13 +20,15 @@ jobs:
           java-version: '11'
           components: 'native-image'
           github-token: ${{ secrets.ACTION_TOKEN }}
-      - name: Example step
+      - name: Build step
         run: |
           echo "GRAALVM_HOME: $GRAALVM_HOME"
           echo "JAVA_HOME: $JAVA_HOME"
           java --version
           gu --version
           native-image --version
-          ls -al /var/run/
-          ./gradlew :microservices:product-service:bootBuildImage --stacktrace
+          ./gradlew :microservices:product-service:bootBuildImage --no-daemon
+          ./gradlew :microservices:product-composite-service:bootBuildImage --no-daemon
+          ./gradlew :microservices:recommendation-service:bootBuildImage --no-daemon
+          ./gradlew :microservices:review-service:bootBuildImage --no-daemon
 
