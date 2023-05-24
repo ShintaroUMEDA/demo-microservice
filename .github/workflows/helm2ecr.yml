@@ -3,9 +3,9 @@ name: Helm2ECR
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ ghaction_test ]
   pull_request:
-    branches: [ main ]
+    branches: [ ghaction_test ]
 
 jobs:
   build:
