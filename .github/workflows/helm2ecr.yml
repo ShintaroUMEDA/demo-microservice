@@ -20,7 +20,7 @@ jobs:
     - name: assume role
       uses: umeda-shintaro/aws-cli@master
       with:
-        args: aws sts assume-role --role-arn ${{ secrets.AWS_ROLE_ARN }} --role-session-name AWSCLI-Session
+        args: sts assume-role --role-arn ${{ secrets.AWS_ROLE_ARN }} --role-session-name AWSCLI-Session
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
