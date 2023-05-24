@@ -16,6 +16,7 @@ jobs:
     
 
     steps:
+      
     - uses: actions/checkout@v3
 #     - name: assume role
 #       uses: umeda-shintaro/aws-cli@master
@@ -33,9 +34,10 @@ jobs:
 #         aws sts assume-role --role-arn ${{ secrets.AWS_ROLE_ARN }} --role-session-name AWSCLI-Session
     - run: |
         echo "NODE_OPTIONS=--trace-warnings" >> "$GITHUB_ENV"
-        echo "aws-access-key-id=${{ secrets.AWS_ACCESS_KEY_ID }}" >> "$GITHUB_ENV"
-        echo "aws-secret-access-key=${{ secrets.AWS_SECRET_ACCESS_KEY }}" >> "$GITHUB_ENV"
     - uses: umeda-shintaro/configure-aws-credentials@master
+      env:
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
