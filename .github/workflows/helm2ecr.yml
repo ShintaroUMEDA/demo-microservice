@@ -18,14 +18,14 @@ jobs:
     steps:
       
     - uses: actions/checkout@v3
-    - name: assume role
-      uses: umeda-shintaro/aws-cli@master
-      with:
-        args: sts assume-role --role-arn arn:aws:iam::550013351950:role/umeda-githubci-role --role-session-name AWSCLI-Session
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_DEFAULT_REGION: ap-northeast-1
+#     - name: assume role
+#       uses: umeda-shintaro/aws-cli@master
+#       with:
+#         args: sts assume-role --role-arn arn:aws:iam::550013351950:role/umeda-githubci-role --role-session-name AWSCLI-Session
+#       env:
+#         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#         AWS_DEFAULT_REGION: ap-northeast-1
 #     - name: Configure AWS credentials
 #       run: |
 #         aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -34,14 +34,14 @@ jobs:
 #         aws sts assume-role --role-arn ${{ secrets.AWS_ROLE_ARN }} --role-session-name AWSCLI-Session
 #     - run: |
 #         echo "NODE_OPTIONS=--trace-warnings" >> "$GITHUB_ENV"
-#     - uses: umeda-shintaro/configure-aws-credentials@master
+    - uses: umeda-shintaro/configure-aws-credentials@master
 #       env:
 #           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 #           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#       with:
-#         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#         aws-region: ap-northeast-1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-northeast-1
 #         role-to-assume: arn:aws:iam::550013351950:role/umeda-githubci-role
 #         role-duration-seconds: 1200
 #         role-session-name: MySessionName
