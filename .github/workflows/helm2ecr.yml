@@ -56,6 +56,8 @@ jobs:
        version: 'v3.5.4' 
       id: install 
     
+    - run: |
+        echo "HELM_EXPERIMENTAL_OCI=1" >> "$GITHUB_ENV"
     - name: Package and push helm chart to Amazon ECR
       env:
         REGISTRY: ${{ steps.login-ecr.outputs.registry }}
