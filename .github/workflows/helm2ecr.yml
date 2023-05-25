@@ -61,6 +61,8 @@ jobs:
         REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         REPOSITORY: kubernetes/helm/environments/dev-env-native
       run: |
+        for f in kubernetes/helm/components/*; do helm dep up $f; done
+        for f in kubernetes/helm/environments/*; do helm dep up $f; done
         helm package $REPOSITORY
         helm push dev-env-native-1.0.0.tgz oci://$REGISTRY
         
