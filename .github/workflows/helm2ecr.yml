@@ -34,7 +34,7 @@ jobs:
 #         aws sts assume-role --role-arn ${{ secrets.AWS_ROLE_ARN }} --role-session-name AWSCLI-Session
 #     - run: |
 #         echo "NODE_OPTIONS=--trace-warnings" >> "$GITHUB_ENV"
-    - uses: umeda-shintaro/configure-aws-credentials@master
+    - uses: umeda-shintaro/configure-aws-credentials@main
 #       env:
 #           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 #           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
