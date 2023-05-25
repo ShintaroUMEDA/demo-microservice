@@ -8,11 +8,12 @@ jobs:
   build:
 
     runs-on:  self-hosted
+    strategy:
+      matrix:
+        native-services: [product-composite,product,recommendation,review]
 
     steps:
     - name: list items
       run: |
-        ls -al /var/run/
-        ls -al /var/run/docker/
-        sudo ln -s /var/run/docker/* /var/run/
-        ls -al /var/run/
+        echo "${{ matrix.native-services }} and ${{ matrix.native-services }}"
+        echo ${{ matrix.native-services }}
