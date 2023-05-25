@@ -48,7 +48,7 @@ jobs:
       - name: Build, tag, and push docker image to Amazon ECR
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          REPOSITORY: my-ecr-repo
+          REPOSITORY: demo-ms/native-product-service
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker tag hands-on/native-product-service:latest $REGISTRY/$REPOSITORY:$IMAGE_TAG
