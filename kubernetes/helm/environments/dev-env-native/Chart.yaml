@@ -58,6 +58,6 @@ dependencies:
     version: 1.0.0
     repository: file://../../components/product-composite
 
-  - name: zipkin-server
-    version: 1.0.0
-    repository: file://../../components/zipkin-server
+  # - name: zipkin-server
+  #   version: 1.0.0
+  #   repository: file://../../components/zipkin-server

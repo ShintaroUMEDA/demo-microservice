@@ -1,6 +1,9 @@
 package se.magnus.microservices.composite.product;
 
 import com.fasterxml.jackson.datatype.jsr310.ser.ZonedDateTimeSerializer;
+
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -163,7 +166,11 @@ import se.magnus.util.http.HttpErrorInfo;
   Advised.class,
   DecoratingProxy.class
 })
-
+// @OpenAPIDefinition( 
+//     servers = {
+//        @Server(url = "https://minikube.me:8443/", description = "Default Server URL")
+//     }
+// )
 @SpringBootApplication
 @ComponentScan("se.magnus")
 public class ProductCompositeServiceApplication {

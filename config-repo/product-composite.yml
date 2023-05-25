@@ -111,7 +111,7 @@ resilience4j.retry:
       maxAttempts: 3
       waitDuration: 1000
       retryExceptions:
-        - org.springframework.web.reactive.function.client.WebClientResponseException$InternalServerError
+      - org.springframework.web.reactive.function.client.WebClientResponseException$InternalServerError
 
 management.health.circuitbreakers.enabled: true
 
