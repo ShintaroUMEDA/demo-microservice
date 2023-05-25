@@ -1,13 +1,13 @@
     
-name: build and push images to ecr
+name: build and push 
 on:
   workflow_dispatch:
-# permissions:
-#       id-token: write # This is required for requesting the JWT
-#       contents: read  # This is required for actions/checkout
+# TODO:マトリックスとキャッシュで高速化する  
+# TODO:リポジトリ名をdemo-microserviceにする
 jobs:
-  build-my-app:
+  setup-env:
     runs-on: self-hosted
+    
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
@@ -22,19 +22,32 @@ jobs:
           java-version: '11'
           components: 'native-image'
           github-token: ${{ secrets.ACTION_TOKEN }}
-      - name: Build step
+      
+#   build-native-app:
+#     runs-on: self-hosted
+#     needs: setup-env
+#     strategy:
+#       max-parallel: 2
+#       matrix:
+#         native-services: [product-composite,product,recommendation,review]
+#     steps:
+      - name: Build native app
         run: |
           echo "GRAALVM_HOME: $GRAALVM_HOME"
           echo "JAVA_HOME: $JAVA_HOME"
           java --version
           gu --version
           native-image --version
+          ./gradlew :microservices:product-composite-service:bootBuildImage --no-daemon
           ./gradlew :microservices:product-service:bootBuildImage --no-daemon
-#           ./gradlew :microservices:product-composite-service:bootBuildImage --no-daemon
-#           ./gradlew :microservices:recommendation-service:bootBuildImage --no-daemon
-#           ./gradlew :microservices:review-service:bootBuildImage --no-daemon
-
-
+          ./gradlew :microservices:recommendation-service:bootBuildImage --no-daemon
+          ./gradlew :microservices:review-service:bootBuildImage --no-daemon
+          
+#   push-images:
+#     runs-on: self-hosted
+#     needs: build-native-app
+#     steps:
+      - name: setup aws credentials
       - uses: umeda-shintaro/configure-aws-credentials@master
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -48,11 +61,22 @@ jobs:
       - name: Build, tag, and push docker image to Amazon ECR
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          REPOSITORY: demo-ms/native-product-service
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker tag hands-on/native-product-service:latest $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          docker compose build
+          docker images
+          for REPOSITORY in hands-on/auth-server hands-on/native-product-service hands-on/native-product-composite-service hands-on/native-recommendation-service hands-on/native-review-service; do
+          docker tag $REPOSITORY:latest $REGISTRY/$REPOSITORY:$IMAGE_TAG
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          done
+          
+          # TODO: yamlからイメージ名:タグを取得する
+          for REPOSITORY in wurstmeister/kafka:2.12-2.5.0 zookeeper:3.4.14 mongo:4.4.2 mysql:5.7.32; do
+          docker tag $REPOSITORY $REGISTRY/$REPOSITORY
+          docker push $REGISTRY/$REPOSITORY
+          done
+           
+          
           
 #       - name: setup helm
 #         uses: umeda-shintaro/setup-helm@main
