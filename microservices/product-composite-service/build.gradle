@@ -13,8 +13,8 @@ ext {
     resilience4jVersion = "1.7.0"
 }
 repositories {
-    maven { url 'https://repo.spring.io/release' }
     mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
 }
 
 jar {
