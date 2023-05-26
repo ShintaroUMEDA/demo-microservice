@@ -38,9 +38,9 @@ jobs:
           gu --version
           native-image --version
           ./gradlew :microservices:product-composite-service:bootBuildImage --no-daemon
-          ./gradlew :microservices:product-service:bootBuildImage --no-daemon
-          ./gradlew :microservices:recommendation-service:bootBuildImage --no-daemon
-          ./gradlew :microservices:review-service:bootBuildImage --no-daemon
+#          ./gradlew :microservices:product-service:bootBuildImage --no-daemon
+#          ./gradlew :microservices:recommendation-service:bootBuildImage --no-daemon
+#          ./gradlew :microservices:review-service:bootBuildImage --no-daemon
           
 #   push-images:
 #     runs-on: self-hosted
@@ -62,9 +62,10 @@ jobs:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           IMAGE_TAG: ${{ github.sha }}
         run: |
+          ./gradlew build -x generateAot -x generateTestAot
           docker compose build
           docker images
-          for REPOSITORY in hands-on/auth-server hands-on/native-product-service hands-on/native-product-composite-service hands-on/native-recommendation-service hands-on/native-review-service; do
+          for REPOSITORY in hands-on/auth-server hands-on/native-product-composite-service; do #         hands-on/native-product-service hands-on/native-recommendation-service hands-on/native-review-service
           docker tag $REPOSITORY:latest $REGISTRY/$REPOSITORY:$IMAGE_TAG
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
           done
