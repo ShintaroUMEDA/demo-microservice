@@ -1545,7 +1545,7 @@
   "allDeclaredMethods":true
 },
 {
-  "name":"java.lang.ClassLoader$ByteBuddyAccessor$pVUdWIKa",
+  "name":"java.lang.ClassLoader$ByteBuddyAccessor$bZ1bUa0d",
   "methods":[
     {"name":"defineClass","parameterTypes":["java.lang.ClassLoader","java.lang.String","byte[]","int","int","java.security.ProtectionDomain"] }, 
     {"name":"definePackage","parameterTypes":["java.lang.ClassLoader","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.net.URL"] }, 
@@ -1979,6 +1979,9 @@
   "methods":[{"name":"<init>","parameterTypes":["java.lang.String","java.lang.String"] }]
 },
 {
+  "name":"java.util.concurrent.ArrayBlockingQueue"
+},
+{
   "name":"java.util.concurrent.Executor",
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -1990,6 +1993,24 @@
   "name":"java.util.concurrent.ThreadFactory",
   "allDeclaredMethods":true,
   "allPublicMethods":true
+},
+{
+  "name":"java.util.concurrent.locks.AbstractOwnableSynchronizer"
+},
+{
+  "name":"java.util.concurrent.locks.AbstractQueuedSynchronizer"
+},
+{
+  "name":"java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject"
+},
+{
+  "name":"java.util.concurrent.locks.ReentrantLock"
+},
+{
+  "name":"java.util.concurrent.locks.ReentrantLock$NonfairSync"
+},
+{
+  "name":"java.util.concurrent.locks.ReentrantLock$Sync"
 },
 {
   "name":"java.util.function.Consumer",
@@ -2844,13 +2865,13 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$$Lambda$1814/0x0000000840aab040",
+  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$$Lambda$1815/0x0000000840aab040",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
 },
 {
-  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$$Lambda$1815/0x0000000840aab440",
+  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$$Lambda$1816/0x0000000840aab440",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -2863,7 +2884,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$KafkaStreamsMetricsConfiguration$$Lambda$1813/0x0000000840aabc40",
+  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$KafkaStreamsMetricsConfiguration$$Lambda$1814/0x0000000840aabc40",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -2988,7 +3009,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.actuate.autoconfigure.metrics.mongo.MongoMetricsAutoConfiguration$MongoCommandMetricsConfiguration$$Lambda$1601/0x00000008409eec40",
+  "name":"org.springframework.boot.actuate.autoconfigure.metrics.mongo.MongoMetricsAutoConfiguration$MongoCommandMetricsConfiguration$$Lambda$1601/0x00000008409f0840",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -3001,7 +3022,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.actuate.autoconfigure.metrics.mongo.MongoMetricsAutoConfiguration$MongoConnectionPoolMetricsConfiguration$$Lambda$1600/0x00000008409ee840",
+  "name":"org.springframework.boot.actuate.autoconfigure.metrics.mongo.MongoMetricsAutoConfiguration$MongoConnectionPoolMetricsConfiguration$$Lambda$1600/0x00000008409f0440",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -3803,7 +3824,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$1609/0x00000008409f4040",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$1609/0x00000008409f2c40",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -3816,7 +3837,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$1610/0x00000008409f4440",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$1610/0x00000008409f2040",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -4694,7 +4715,7 @@
   "allPublicMethods":true
 },
 {
-  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$1121/0x000000084075d440",
+  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$1161/0x0000000840777840",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -4897,14 +4918,14 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.cloud.function.context.config.KotlinLambdaToFunctionAutoConfiguration$$EnhancerBySpringCGLIB$$3c87990",
+  "name":"org.springframework.cloud.function.context.config.KotlinLambdaToFunctionAutoConfiguration$$EnhancerBySpringCGLIB$$f02f74f1",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true,
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"org.springframework.cloud.function.context.config.KotlinLambdaToFunctionAutoConfiguration$$EnhancerBySpringCGLIB$$3c87990$$FastClassBySpringCGLIB$$bb5dca1d",
+  "name":"org.springframework.cloud.function.context.config.KotlinLambdaToFunctionAutoConfiguration$$EnhancerBySpringCGLIB$$f02f74f1$$FastClassBySpringCGLIB$$d0b1e42a",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -5076,7 +5097,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$cd16156f",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$b97d10d0",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -5084,7 +5105,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$cd16156f$$FastClassBySpringCGLIB$$5bb726bf",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$b97d10d0$$FastClassBySpringCGLIB$$1def4574",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -5092,7 +5113,7 @@
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$1472/0x000000084097d440",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$1472/0x000000084097c040",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -5105,7 +5126,7 @@
   "allDeclaredClasses":true
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderConfiguration$$EnhancerBySpringCGLIB$$2433188f",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderConfiguration$$EnhancerBySpringCGLIB$$109a13f0",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true,
@@ -5113,7 +5134,7 @@
   "methods":[{"name":"jaasInitializer","parameterTypes":["org.springframework.cloud.stream.binder.kafka.properties.KafkaBinderConfigurationProperties"] }]
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderConfiguration$$EnhancerBySpringCGLIB$$2433188f$$FastClassBySpringCGLIB$$27aa8efc",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderConfiguration$$EnhancerBySpringCGLIB$$109a13f0$$FastClassBySpringCGLIB$$f8f5b498",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -5132,7 +5153,7 @@
   "allDeclaredClasses":true
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderConfiguration$KafkaBinderMetricsConfiguration$$EnhancerBySpringCGLIB$$305c8a2e",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderConfiguration$KafkaBinderMetricsConfiguration$$EnhancerBySpringCGLIB$$1cc3858f",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true,
@@ -5140,7 +5161,7 @@
   "methods":[{"name":"kafkaBinderMetrics","parameterTypes":["org.springframework.cloud.stream.binder.kafka.KafkaMessageChannelBinder","org.springframework.cloud.stream.binder.kafka.properties.KafkaBinderConfigurationProperties","io.micrometer.core.instrument.MeterRegistry"] }]
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderConfiguration$KafkaBinderMetricsConfiguration$$EnhancerBySpringCGLIB$$305c8a2e$$FastClassBySpringCGLIB$$31d9472d",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderConfiguration$KafkaBinderMetricsConfiguration$$EnhancerBySpringCGLIB$$1cc3858f$$FastClassBySpringCGLIB$$37ce9b53",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -5179,7 +5200,7 @@
   "allDeclaredClasses":true
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderHealthIndicatorConfiguration$$EnhancerBySpringCGLIB$$8f2126a0",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderHealthIndicatorConfiguration$$EnhancerBySpringCGLIB$$7b882201",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true,
@@ -5187,7 +5208,7 @@
   "methods":[{"name":"kafkaBinderHealthIndicator","parameterTypes":["org.springframework.cloud.stream.binder.kafka.KafkaMessageChannelBinder","org.springframework.cloud.stream.binder.kafka.properties.KafkaBinderConfigurationProperties"] }]
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderHealthIndicatorConfiguration$$EnhancerBySpringCGLIB$$8f2126a0$$FastClassBySpringCGLIB$$de10be14",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.KafkaBinderHealthIndicatorConfiguration$$EnhancerBySpringCGLIB$$7b882201$$FastClassBySpringCGLIB$$ad364780",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -7123,7 +7144,7 @@
   "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder"
 },
 {
-  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$1663/0x0000000840a3e840",
+  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$1664/0x0000000840a3d840",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -7445,7 +7466,7 @@
   "allDeclaredClasses":true
 },
 {
-  "name":"se.magnus.microservices.core.product.ProductServiceApplication$$EnhancerBySpringCGLIB$$8e25da9c",
+  "name":"se.magnus.microservices.core.product.ProductServiceApplication$$EnhancerBySpringCGLIB$$7a8cd5fd",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -7467,19 +7488,19 @@
   ]
 },
 {
-  "name":"se.magnus.microservices.core.product.persistence.ProductEntity_Accessor_jfl1io",
+  "name":"se.magnus.microservices.core.product.persistence.ProductEntity_Accessor_bwhnhw",
   "allPublicConstructors":true
 },
 {
-  "name":"se.magnus.microservices.core.product.persistence.ProductEntity_Accessor_km6se7",
+  "name":"se.magnus.microservices.core.product.persistence.ProductEntity_Accessor_c7a6ig",
   "allPublicConstructors":true
 },
 {
-  "name":"se.magnus.microservices.core.product.persistence.ProductEntity_Instantiator_jfl1io",
+  "name":"se.magnus.microservices.core.product.persistence.ProductEntity_Instantiator_bwhnhw",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
-  "name":"se.magnus.microservices.core.product.persistence.ProductEntity_Instantiator_km6se7",
+  "name":"se.magnus.microservices.core.product.persistence.ProductEntity_Instantiator_c7a6ig",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
@@ -7495,7 +7516,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"se.magnus.microservices.core.product.services.MessageProcessorConfig$$EnhancerBySpringCGLIB$$6dad4f",
+  "name":"se.magnus.microservices.core.product.services.MessageProcessorConfig$$EnhancerBySpringCGLIB$$ecd4a8b0",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -7503,7 +7524,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"se.magnus.microservices.core.product.services.MessageProcessorConfig$$EnhancerBySpringCGLIB$$6dad4f$$FastClassBySpringCGLIB$$8ed73ac8",
+  "name":"se.magnus.microservices.core.product.services.MessageProcessorConfig$$EnhancerBySpringCGLIB$$ecd4a8b0$$FastClassBySpringCGLIB$$15f2a038",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -7511,7 +7532,7 @@
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
-  "name":"se.magnus.microservices.core.product.services.MessageProcessorConfig$$Lambda$1120/0x000000084075d040",
+  "name":"se.magnus.microservices.core.product.services.MessageProcessorConfig$$Lambda$1160/0x0000000840771440",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -7702,5 +7723,8 @@
 {
   "name":"sun.security.x509.SubjectKeyIdentifierExtension",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"worker.org.gradle.process.internal.worker.GradleWorkerMain"
 }
 ]

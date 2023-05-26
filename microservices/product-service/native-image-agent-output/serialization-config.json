@@ -3,6 +3,33 @@
   "name":"java.util.HashSet"
   },
   {
+  "name":"java.util.concurrent.ArrayBlockingQueue"
+  },
+  {
+  "name":"java.util.concurrent.locks.AbstractQueuedSynchronizer"
+  },
+  {
+  "name":"[Ljava.lang.Object;"
+  },
+  {
+  "name":"java.util.concurrent.locks.ReentrantLock"
+  },
+  {
+  "name":"java.util.concurrent.locks.ReentrantLock$NonfairSync"
+  },
+  {
+  "name":"java.lang.Enum"
+  },
+  {
+  "name":"java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject"
+  },
+  {
+  "name":"java.util.concurrent.locks.AbstractOwnableSynchronizer"
+  },
+  {
   "name":"java.util.LinkedHashSet"
+  },
+  {
+  "name":"java.util.concurrent.locks.ReentrantLock$Sync"
   }
 ]
