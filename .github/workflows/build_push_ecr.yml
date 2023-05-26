@@ -17,7 +17,7 @@ jobs:
       - name: install dependencies
         uses: umeda-shintaro/setup-graalvm@main
         with:
-          version: '22.3.2'
+          version: '21.1.0'
           java-version: '11'
           components: 'native-image'
           github-token: ${{ secrets.ACTION_TOKEN }}
