@@ -37,6 +37,10 @@ jobs:
           java --version
           gu --version
           native-image --version
+          ./gradlew :microservices:product-composite-service:bootBuildImage
+          ./gradlew :microservices:product-service:bootBuildImage
+          ./gradlew :microservices:recommendation-service:bootBuildImage
+          ./gradlew :microservices:review-service:bootBuildImage
           
 #   push-images:
 #     runs-on: self-hosted
