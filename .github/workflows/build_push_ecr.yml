@@ -64,6 +64,8 @@ jobs:
         run: |
           ./gradlew build -x generateAot -x generateTestAot
           docker compose build
+          docker pull zookeeper:3.4.14
+          docker pull wurstmeister/kafka:2.12-2.5.0
           docker images
           for REPOSITORY in hands-on/auth-server hands-on/native-product-composite-service hands-on/native-product-service hands-on/native-recommendation-service hands-on/native-review-service; do
           docker tag $REPOSITORY:latest $REGISTRY/$REPOSITORY:$IMAGE_TAG
