@@ -44,6 +44,7 @@ export JAVA_HOME=<MY_FOLDER_FULL_
 ./gradlew :microservices:recommendation-service:bootBuildImage --no-daemon
 ./gradlew :microservices:review-service:bootBuildImage --no-daemon
 ```
+* かなり時間がかかります
 ```
 minikube start \
  --profile=handson-spring-boot-cloud \
