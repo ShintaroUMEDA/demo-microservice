@@ -65,7 +65,7 @@ jobs:
         # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
         # Use || true to not fail the pipeline
       - name: Snyk Code test
-      - uses: actions/checkout@master
+        uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/gradle-jdk11@master
         continue-on-error: true # To make sure that SARIF upload gets called
