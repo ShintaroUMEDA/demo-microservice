@@ -13,3 +13,5 @@ service:
   ports:
     - name: mongo
       port: 27017
+
+configmap: {}

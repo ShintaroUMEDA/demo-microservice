@@ -46,3 +46,4 @@ service:
   ports:
     - port: 9411
 
+configmap: {}
