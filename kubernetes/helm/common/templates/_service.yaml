@@ -13,13 +13,9 @@ metadata:
     helm.sh/chart: {{ include "common.chart" . }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
-  type: ClusterIP
-  {{- if .Values }}
-  {{- if .Values.service }}
+  type: {{ .Values.service.type }}
   ports:
 {{ toYaml .Values.service.ports | indent 4 }}
-  {{- end -}}
-  {{- end -}}
   selector:
     app.kubernetes.io/name: {{ include "common.name" . }}
 {{- end -}}
