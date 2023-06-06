@@ -15,5 +15,3 @@ service:
   ports:
     - name: mysql
       port: 3306
-
-configmap: {}

@@ -33,5 +33,3 @@ service:
       port: 5672
     - name: http-mgm-ui
       port: 15672
-
-configmap: {}

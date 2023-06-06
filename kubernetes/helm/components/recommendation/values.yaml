@@ -15,5 +15,3 @@ configmap:
   enabled: true
   volumeMounts:
     mountPath: /config-repo
-
-service: {}
