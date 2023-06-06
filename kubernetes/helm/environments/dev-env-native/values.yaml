@@ -130,6 +130,6 @@ product-composite:
 #   - name: recommendation
 #   - name: review
   
-zipkin-server:
-  envFromSecretRefs:
-    - rabbitmq-zipkin-credentials
+# zipkin-server:
+#   envFromSecretRefs:
+#     - rabbitmq-zipkin-credentials

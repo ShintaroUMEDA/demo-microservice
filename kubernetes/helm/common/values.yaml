@@ -7,9 +7,9 @@ ingress:
     secretName: tls-certificate
 
 image:
-  repository: hands-on
-  tag: latest
-  pullPolicy: Never
+  repository: 550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on
+  tag: 9dab62848fbca436f3669d6ca4b090dd7537be68
+  pullPolicy: Always
   args: []
 
 ports:

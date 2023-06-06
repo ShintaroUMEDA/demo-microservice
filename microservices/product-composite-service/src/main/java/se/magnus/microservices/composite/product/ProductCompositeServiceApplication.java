@@ -164,13 +164,16 @@ import se.magnus.util.http.HttpErrorInfo;
   ReviewService.class,
   SpringProxy.class,
   Advised.class,
-  DecoratingProxy.class
+  DecoratingProxy.class,
+  org.springframework.aop.SpringProxy.class,
+  org.springframework.aop.framework.Advised.class,
+  org.springframework.core.DecoratingProxy.class
 })
-// @OpenAPIDefinition( 
-//     servers = {
-//        @Server(url = "https://minikube.me:8443/", description = "Default Server URL")
-//     }
-// )
+@OpenAPIDefinition( 
+    servers = {
+       @Server(url = "https://minikube.me:8443/", description = "Default Server URL")
+    }
+)
 @SpringBootApplication
 @ComponentScan("se.magnus")
 public class ProductCompositeServiceApplication {
