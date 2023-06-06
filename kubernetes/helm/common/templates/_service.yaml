@@ -14,7 +14,7 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   type: ClusterIP
-  {{- if .Values.service }}
+  {{- if .Values }}
   ports:
 {{ toYaml .Values.service.ports | indent 4 }}
   {{- end }}
