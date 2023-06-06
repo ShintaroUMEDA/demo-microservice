@@ -58,7 +58,6 @@ spec:
 {{ toYaml .Values.ports | indent 12 }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
-      {{- if .Values.configmap }}
       {{- if .Values.configmap.enabled }}
           volumeMounts:
           - name: {{ include "common.fullname" . }}
@@ -67,7 +66,6 @@ spec:
         - name: {{ include "common.fullname" . }}
           configMap:
             name: {{ include "common.fullname" . }}
-      {{- end }}
       {{- end }}
 {{- end -}}
 {{- end -}}

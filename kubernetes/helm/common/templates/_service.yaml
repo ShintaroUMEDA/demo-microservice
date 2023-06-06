@@ -14,12 +14,8 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   type: ClusterIP
-  {{- if .Values }}
-  {{- if .Values.service }}
   ports:
 {{ toYaml .Values.service.ports | indent 4 }}
-  {{- end }}
-  {{- end }}
   selector:
     app.kubernetes.io/name: {{ include "common.name" . }}
 {{- end -}}
