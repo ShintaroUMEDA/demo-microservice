@@ -1,0 +1,33 @@
+dependencies:
+- name: common
+  repository: file://helm/common
+  version: 1.0.0
+- name: zookeeper
+  repository: file://helm/components/zookeeper
+  version: 1.0.0
+- name: kafka
+  repository: file://helm/components/kafka
+  version: 1.0.0
+- name: mongodb
+  repository: file://helm/components/mongodb
+  version: 1.0.0
+- name: mysql
+  repository: file://helm/components/mysql
+  version: 1.0.0
+- name: auth-server
+  repository: file://helm/components/auth-server
+  version: 1.0.0
+- name: product
+  repository: file://helm/components/product
+  version: 1.0.0
+- name: recommendation
+  repository: file://helm/components/recommendation
+  version: 1.0.0
+- name: review
+  repository: file://helm/components/review
+  version: 1.0.0
+- name: product-composite
+  repository: file://helm/components/product-composite
+  version: 1.0.0
+digest: sha256:8fff7f8c9e10989d1abb96ee407235154117c4159badc48272ac254d05d5692e
+generated: "2023-06-06T21:09:35.227750006+09:00"
