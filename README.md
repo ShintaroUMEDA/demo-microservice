@@ -43,6 +43,9 @@ export JAVA_HOME=<MY_FOLDER_FULL_
 ./gradlew :microservices:product-composite-service:bootBuildImage --no-daemon
 ./gradlew :microservices:recommendation-service:bootBuildImage --no-daemon
 ./gradlew :microservices:review-service:bootBuildImage --no-daemon
+
+./gradlew build -x generateAot -x generateTestAot 
+
 ```
 * かなり時間がかかります
 ```
@@ -55,12 +58,12 @@ minikube start \
  --driver=docker \
  --ports=8080:80 --ports=8443:443 \
  --ports=9411:9411 --ports=30080:30080 --ports=30443:30443 
-```
-```
+
 minikube profile handson-spring-boot-cloud
 minikube addons enable metrics-server
 minikube addons enable ingress
 ```
+* 二回目以降はminikube startのみでOK
 ```
  helm upgrade --install cert-manager jetstack/cert-manager \
 --create-namespace \
@@ -99,5 +102,5 @@ kubectl config set-context $(kubectl config current-context) --namespace=hands-o
 for f in kubernetes/helm/components/*; do helm dep up $f; done
 for f in kubernetes/helm/environments/*; do helm dep up $f; done
 
-helm upgrade --install hands-on-dev-env-native  kubernetes/helm/environments/dev-env-native  -n hands-on --wait
+helm upgrade --install hands-on-dev-env-native  kubernetes/helm/environments/dev-env-native  -n hands-on --debug
 ```

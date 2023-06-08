@@ -1,0 +1,17 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: demo-ms-eks
+  region: ap-northeast-1
+  version: "1.26"
+  tags: 
+    'Owner': 'umeda.shintaro.3xk' 
+
+managedNodeGroups:
+  - name: sample-node
+    instanceType: t2.medium
+    volumeSize: 20
+    ssh:
+      allow: true
+      publicKeyPath: ~/.ssh/argocd_key.pub

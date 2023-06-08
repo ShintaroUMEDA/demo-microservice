@@ -1,0 +1,118 @@
+apiVersion: v1
+items:
+- apiVersion: networking.k8s.io/v1
+  kind: Ingress
+  metadata:
+    annotations:
+      cert-manager.io/issuer: selfsigned
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"networking.k8s.io/v1","kind":"Ingress","metadata":{"annotations":{"cert-manager.io/issuer":"selfsigned"},"labels":{"app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"dev-env-native","argocd.argoproj.io/instance":"demo-ms","helm.sh/chart":"dev-env-native-1.0.0"},"name":"demo-ms-dev-env-native","namespace":"argo-test"},"spec":{"rules":[{"host":"minikube.me","http":{"paths":[{"backend":{"service":{"name":"auth-server","port":{"name":"http"}}},"path":"/oauth2","pathType":"Prefix"},{"backend":{"service":{"name":"auth-server","port":{"name":"http"}}},"path":"/login","pathType":"Prefix"},{"backend":{"service":{"name":"auth-server","port":{"name":"http"}}},"path":"/error","pathType":"Prefix"},{"backend":{"service":{"name":"product-composite","port":{"name":"http"}}},"path":"/product-composite","pathType":"Prefix"},{"backend":{"service":{"name":"product-composite","port":{"name":"http"}}},"path":"/actuator/health","pathType":"Prefix"},{"backend":{"service":{"name":"product-composite","port":{"name":"http"}}},"path":"/openapi","pathType":"Prefix"},{"backend":{"service":{"name":"product-composite","port":{"name":"http"}}},"path":"/webjars","pathType":"Prefix"}]}}],"tls":[{"hosts":["minikube.me"],"secretName":"tls-certificate"}]}}
+    creationTimestamp: "2023-06-08T08:46:22Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: dev-env-native
+      argocd.argoproj.io/instance: demo-ms
+      helm.sh/chart: dev-env-native-1.0.0
+    managedFields:
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:cert-manager.io/issuer: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+          f:labels:
+            .: {}
+            f:app.kubernetes.io/managed-by: {}
+            f:app.kubernetes.io/name: {}
+            f:argocd.argoproj.io/instance: {}
+            f:helm.sh/chart: {}
+        f:spec:
+          f:rules: {}
+          f:tls: {}
+      manager: argocd-controller
+      operation: Update
+      time: "2023-06-08T08:46:22Z"
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:loadBalancer:
+            f:ingress: {}
+      manager: nginx-ingress-controller
+      operation: Update
+      subresource: status
+      time: "2023-06-08T08:47:18Z"
+    name: demo-ms-dev-env-native
+    namespace: argo-test
+    resourceVersion: "14455"
+    uid: 4279eaf7-5811-4635-9c0b-b54d89af43f2
+  spec:
+    ingressClassName: nginx
+    rules:
+    - host: minikube.me
+      http:
+        paths:
+        - backend:
+            service:
+              name: auth-server
+              port:
+                name: http
+          path: /oauth2
+          pathType: Prefix
+        - backend:
+            service:
+              name: auth-server
+              port:
+                name: http
+          path: /login
+          pathType: Prefix
+        - backend:
+            service:
+              name: auth-server
+              port:
+                name: http
+          path: /error
+          pathType: Prefix
+        - backend:
+            service:
+              name: product-composite
+              port:
+                name: http
+          path: /product-composite
+          pathType: Prefix
+        - backend:
+            service:
+              name: product-composite
+              port:
+                name: http
+          path: /actuator/health
+          pathType: Prefix
+        - backend:
+            service:
+              name: product-composite
+              port:
+                name: http
+          path: /openapi
+          pathType: Prefix
+        - backend:
+            service:
+              name: product-composite
+              port:
+                name: http
+          path: /webjars
+          pathType: Prefix
+    tls:
+    - hosts:
+      - minikube.me
+      secretName: tls-certificate
+  status:
+    loadBalancer:
+      ingress:
+      - hostname: aa0e1da8df2a04691a864136b93f4d5f-8f27b2ae762a0faa.elb.ap-northeast-1.amazonaws.com
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
