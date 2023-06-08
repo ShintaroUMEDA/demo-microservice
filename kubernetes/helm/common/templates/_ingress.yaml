@@ -14,11 +14,11 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
     
   annotations:
-    kubernetes.io/ingress.class: nginx
 {{- with .Values.ingress.annotations }}
 {{ toYaml . | indent 4 }}
 {{- end }}
 spec:
+  ingressClassName: nginx
   tls:
     - hosts:
         - {{ .Values.ingress.host | quote }}
