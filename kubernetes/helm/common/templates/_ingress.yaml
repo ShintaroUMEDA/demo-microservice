@@ -13,8 +13,9 @@ metadata:
     helm.sh/chart: {{ include "common.chart" . }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
     
-{{- with .Values.ingress.annotations }}
   annotations:
+    kubernetes.io/ingress.class: nginx
+{{- with .Values.ingress.annotations }}
 {{ toYaml . | indent 4 }}
 {{- end }}
 spec:
