@@ -2,6 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: demo-ms
+  namespace: argo-test
+  annotations:
+    argocd-image-updater.argoproj.io/write-back-method: git
+    argocd-image-updater.argoproj.io/image-list: app=550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on/native-product-composite-service
+    argocd-image-updater.argoproj.io/app.update-strategy: latest
+
+
+
 spec:
   destination:
     name: ''
