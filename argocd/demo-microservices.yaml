@@ -8,7 +8,7 @@ spec:
     namespace: argo-test
     server: 'https://kubernetes.default.svc'
   source:
-    path: kubernetes
+    path: kubernetes/environments/dev-env-native
     repoURL: 'git@github.com:ShintaroUMEDA/demo-microservice.git'
     targetRevision: helm_test
   sources: []
