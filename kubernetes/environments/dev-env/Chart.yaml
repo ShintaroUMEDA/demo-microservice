@@ -8,40 +8,40 @@ dependencies:
 
   - name: common
     version: 1.0.0
-    repository: file://../../common
+    repository: file://helm/common
 
   - name: rabbitmq
     version: 1.0.0
-    repository: file://../../components/rabbitmq
+    repository: file://helm/components/rabbitmq
 
   - name: mongodb
     version: 1.0.0
-    repository: file://../../components/mongodb
+    repository: file://helm/components/mongodb
 
   - name: mysql
     version: 1.0.0
-    repository: file://../../components/mysql
+    repository: file://helm/components/mysql
 
   - name: auth-server
     version: 1.0.0
-    repository: file://../../components/auth-server
+    repository: file://helm/components/auth-server
 
   - name: product
     version: 1.0.0
-    repository: file://../../components/product
+    repository: file://helm/components/product
 
   - name: recommendation
     version: 1.0.0
-    repository: file://../../components/recommendation
+    repository: file://helm/components/recommendation
 
   - name: review
     version: 1.0.0
-    repository: file://../../components/review
+    repository: file://helm/components/review
 
   - name: product-composite
     version: 1.0.0
-    repository: file://../../components/product-composite
+    repository: file://helm/components/product-composite
 
   - name: zipkin-server
     version: 1.0.0
-    repository: file://../../components/zipkin-server
+    repository: file://helm/components/zipkin-server

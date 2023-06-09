@@ -100,7 +100,7 @@ kubectl apply -f kubernetes/hands-on-namespace.yml
 kubectl config set-context $(kubectl config current-context) --namespace=hands-on
 
 for f in kubernetes/helm/components/*; do helm dep up $f; done
-for f in kubernetes/helm/environments/*; do helm dep up $f; done
+for f in kubernetes/environments/*; do helm dep up $f; done
 
 helm upgrade --install hands-on-dev-env-native  kubernetes/helm/environments/dev-env-native  -n hands-on --debug
 ```
