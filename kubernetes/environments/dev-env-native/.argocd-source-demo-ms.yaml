@@ -4,5 +4,5 @@ helm:
     value: 550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on/native-product-composite-service
     forcestring: true
   - name: image.tag
-    value: latest
+    value: test
     forcestring: true
