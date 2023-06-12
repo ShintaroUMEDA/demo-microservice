@@ -61,7 +61,7 @@ public class ProductServiceImpl implements ProductService {
       throw new InvalidInputException("Invalid productId: " + productId);
     }
 
-    LOG.info("Will get product info for id={}", productId);
+    LOG.info("CICDtest Will get product info for id={}", productId);
 
     return repository.findByProductId(productId)
       .map(e -> throwErrorIfBadLuck(e, faultPercent))
