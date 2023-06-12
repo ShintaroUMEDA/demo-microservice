@@ -63,7 +63,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           ./gradlew build -x generateAot -x generateTestAot
-          docker compose build
+          docker-compose build auth-server
           docker pull zookeeper:3.4.14
           docker pull wurstmeister/kafka:2.12-2.5.0
           docker images
