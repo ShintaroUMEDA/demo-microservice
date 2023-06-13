@@ -1,8 +1,8 @@
 helm:
   parameters:
-  - name: 550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on/native-product-composite-service
+  - name: demo-ms.image.repository
     value: 550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on/native-product-composite-service
     forcestring: true
-  - name: 9dab62848fbca436f3669d6ca4b090dd7537be68
+  - name: demo-ms.image.tag
     value: test
     forcestring: true
