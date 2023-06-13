@@ -1,8 +1,8 @@
 helm:
   parameters:
-  - name: image.name
+  - name: app.image.name
     value: 550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on/native-product-composite-service
     forcestring: true
-  - name: image.tag
+  - name: app.image.tag
     value: test
     forcestring: true
