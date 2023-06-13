@@ -8,7 +8,7 @@ ingress:
 
 image:
   repository: 550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on
-  tag: 9dab62848fbca436f3669d6ca4b090dd7537be68
+  tag: 2b44da3691f05e681474024bf0e2bf3eb2fa0fb0
   pullPolicy: Always
   args: []
 
