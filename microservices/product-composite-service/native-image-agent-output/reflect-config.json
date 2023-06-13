@@ -246,6 +246,10 @@
   "name":"com.fasterxml.jackson.databind.SerializerProvider"
 },
 {
+  "name":"com.fasterxml.jackson.databind.annotation.JsonSerialize",
+  "allDeclaredMethods":true
+},
+{
   "name":"com.fasterxml.jackson.databind.cfg.ConstructorDetector"
 },
 {
@@ -485,22 +489,22 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
-  "name":"com.sun.proxy.$Proxy125",
+  "name":"com.sun.proxy.$Proxy128",
   "methods":[
     {"name":"postProcessAfterInitialization","parameterTypes":["java.lang.Object","java.lang.String"] }, 
     {"name":"postProcessBeforeInitialization","parameterTypes":["java.lang.Object","java.lang.String"] }
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy126",
+  "name":"com.sun.proxy.$Proxy129",
   "methods":[{"name":"postProcessBeforeInitialization","parameterTypes":["java.lang.Object","java.lang.String"] }]
 },
 {
-  "name":"com.sun.proxy.$Proxy127",
+  "name":"com.sun.proxy.$Proxy130",
   "methods":[{"name":"postProcessBeforeInitialization","parameterTypes":["java.lang.Object","java.lang.String"] }]
 },
 {
-  "name":"com.sun.proxy.$Proxy136",
+  "name":"com.sun.proxy.$Proxy139",
   "methods":[
     {"name":"actuals","parameterTypes":[] }, 
     {"name":"isScanAvailable","parameterTypes":[] }, 
@@ -515,7 +519,7 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy140",
+  "name":"com.sun.proxy.$Proxy143",
   "methods":[
     {"name":"getInputType","parameterTypes":["java.lang.Object"] }, 
     {"name":"getInputWrapper","parameterTypes":["java.lang.Object"] }, 
@@ -529,7 +533,7 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy142",
+  "name":"com.sun.proxy.$Proxy145",
   "methods":[
     {"name":"prefersShortLivedTasks","parameterTypes":[] }, 
     {"name":"schedule","parameterTypes":["java.lang.Runnable","java.time.Instant"] }, 
@@ -540,15 +544,15 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy155",
+  "name":"com.sun.proxy.$Proxy159",
   "methods":[{"name":"getClockProvider","parameterTypes":[] }]
 },
 {
-  "name":"com.sun.proxy.$Proxy159",
+  "name":"com.sun.proxy.$Proxy163",
   "methods":[{"name":"validateValue","parameterTypes":["java.lang.Class","java.lang.String","java.lang.Object","org.springframework.validation.Errors","java.lang.Object[]"] }]
 },
 {
-  "name":"com.sun.proxy.$Proxy169",
+  "name":"com.sun.proxy.$Proxy173",
   "methods":[
     {"name":"forEach","parameterTypes":["java.util.function.Consumer"] }, 
     {"name":"spliterator","parameterTypes":[] }, 
@@ -556,7 +560,7 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy172",
+  "name":"com.sun.proxy.$Proxy176",
   "methods":[
     {"name":"forEach","parameterTypes":["java.util.function.Consumer"] }, 
     {"name":"spliterator","parameterTypes":[] }, 
@@ -564,14 +568,14 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy179",
+  "name":"com.sun.proxy.$Proxy183",
   "methods":[
     {"name":"getLivenessState","parameterTypes":[] }, 
     {"name":"getReadinessState","parameterTypes":[] }
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy184",
+  "name":"com.sun.proxy.$Proxy188",
   "methods":[
     {"name":"createConsumer","parameterTypes":[] }, 
     {"name":"createConsumer","parameterTypes":["java.lang.String"] }, 
@@ -579,7 +583,7 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy186",
+  "name":"com.sun.proxy.$Proxy190",
   "methods":[
     {"name":"getManagedName","parameterTypes":[] }, 
     {"name":"getManagedType","parameterTypes":[] }, 
@@ -589,7 +593,7 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy191",
+  "name":"com.sun.proxy.$Proxy195",
   "methods":[
     {"name":"getManagedName","parameterTypes":[] }, 
     {"name":"getManagedType","parameterTypes":[] }, 
@@ -600,14 +604,14 @@
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy192",
+  "name":"com.sun.proxy.$Proxy196",
   "methods":[
     {"name":"currentContext","parameterTypes":[] }, 
     {"name":"getThisAs","parameterTypes":[] }
   ]
 },
 {
-  "name":"com.sun.proxy.$Proxy193",
+  "name":"com.sun.proxy.$Proxy197",
   "methods":[{"name":"isSingleton","parameterTypes":[] }]
 },
 {
@@ -676,7 +680,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadAutoConfiguration$$EnhancerBySpringCGLIB$$7ca4a5a1",
+  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadAutoConfiguration$$EnhancerBySpringCGLIB$$54bf2e2f",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -691,7 +695,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$eb56d07d",
+  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$c371590b",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -706,7 +710,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$5ae6c27d",
+  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$33014b0b",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -714,7 +718,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$5ae6c27d$$FastClassBySpringCGLIB$$9d9cb510",
+  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$33014b0b$$FastClassBySpringCGLIB$$f1afbd18",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -729,7 +733,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$d03ec7a0",
+  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$a859502e",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -737,7 +741,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$d03ec7a0$$FastClassBySpringCGLIB$$e0111475",
+  "name":"io.github.resilience4j.bulkhead.autoconfigure.BulkheadMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$a859502e$$FastClassBySpringCGLIB$$5088061d",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -759,7 +763,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.bulkhead.autoconfigure.ThreadPoolBulkheadMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$88e9a906",
+  "name":"io.github.resilience4j.bulkhead.autoconfigure.ThreadPoolBulkheadMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$61043194",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -767,7 +771,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.bulkhead.autoconfigure.ThreadPoolBulkheadMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$88e9a906$$FastClassBySpringCGLIB$$6d052800",
+  "name":"io.github.resilience4j.bulkhead.autoconfigure.ThreadPoolBulkheadMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$61043194$$FastClassBySpringCGLIB$$d02adb06",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -875,7 +879,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerAutoConfiguration$$EnhancerBySpringCGLIB$$7f705061",
+  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerAutoConfiguration$$EnhancerBySpringCGLIB$$578ad8ef",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -890,7 +894,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerAutoConfiguration$CircuitBreakerEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$d10a49ec",
+  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerAutoConfiguration$CircuitBreakerEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$a924d27a",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -905,7 +909,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$48af2fbd",
+  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$20c9b84b",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -913,7 +917,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$48af2fbd$$FastClassBySpringCGLIB$$c36d3576",
+  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$20c9b84b$$FastClassBySpringCGLIB$$4d7db0cf",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -928,7 +932,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$93c184e0",
+  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$6bdc0d6e",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -936,7 +940,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$93c184e0$$FastClassBySpringCGLIB$$4048d063",
+  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$6bdc0d6e$$FastClassBySpringCGLIB$$c35ca642",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -958,7 +962,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerStreamEventsAutoConfiguration$$EnhancerBySpringCGLIB$$39bba408",
+  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakerStreamEventsAutoConfiguration$$EnhancerBySpringCGLIB$$11d62c96",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -973,7 +977,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakersHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$6018ac41",
+  "name":"io.github.resilience4j.circuitbreaker.autoconfigure.CircuitBreakersHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$383334cf",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1229,7 +1233,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.fallback.autoconfigure.FallbackConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$5eaa747d",
+  "name":"io.github.resilience4j.fallback.autoconfigure.FallbackConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$36c4fd0b",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1237,7 +1241,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.fallback.autoconfigure.FallbackConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$5eaa747d$$FastClassBySpringCGLIB$$63a30771",
+  "name":"io.github.resilience4j.fallback.autoconfigure.FallbackConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$36c4fd0b$$FastClassBySpringCGLIB$$dea16d1b",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -1379,7 +1383,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterAutoConfiguration$$EnhancerBySpringCGLIB$$c2738e9b",
+  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterAutoConfiguration$$EnhancerBySpringCGLIB$$9a8e1729",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1394,7 +1398,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterAutoConfiguration$RateLimiterEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$8bc49549",
+  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterAutoConfiguration$RateLimiterEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$63df1dd7",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1409,7 +1413,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$db1552c3",
+  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$b32fdb51",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1417,7 +1421,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$db1552c3$$FastClassBySpringCGLIB$$d9ececc0",
+  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$b32fdb51$$FastClassBySpringCGLIB$$58631670",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -1432,7 +1436,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$8940b166",
+  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$615b39f4",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1440,7 +1444,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$8940b166$$FastClassBySpringCGLIB$$2ffa1ffa",
+  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimiterMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$615b39f4$$FastClassBySpringCGLIB$$bd66226a",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -1462,7 +1466,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimitersHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$a75c367b",
+  "name":"io.github.resilience4j.ratelimiter.autoconfigure.RateLimitersHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$7f76bf09",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1560,7 +1564,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.retry.autoconfigure.RetryAutoConfiguration$$EnhancerBySpringCGLIB$$f72eaa7b",
+  "name":"io.github.resilience4j.retry.autoconfigure.RetryAutoConfiguration$$EnhancerBySpringCGLIB$$cf493309",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1575,7 +1579,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.retry.autoconfigure.RetryAutoConfiguration$RetryAutoEndpointConfiguration$$EnhancerBySpringCGLIB$$eab7ee9",
+  "name":"io.github.resilience4j.retry.autoconfigure.RetryAutoConfiguration$RetryAutoEndpointConfiguration$$EnhancerBySpringCGLIB$$e6c60777",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1590,7 +1594,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.retry.autoconfigure.RetryConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$47eb92e3",
+  "name":"io.github.resilience4j.retry.autoconfigure.RetryConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$20061b71",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1598,7 +1602,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.retry.autoconfigure.RetryConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$47eb92e3$$FastClassBySpringCGLIB$$f522a98",
+  "name":"io.github.resilience4j.retry.autoconfigure.RetryConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$20061b71$$FastClassBySpringCGLIB$$70645aa0",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -1613,7 +1617,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.retry.autoconfigure.RetryMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$40e87986",
+  "name":"io.github.resilience4j.retry.autoconfigure.RetryMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$19030214",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1621,7 +1625,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.retry.autoconfigure.RetryMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$40e87986$$FastClassBySpringCGLIB$$1d723bdd",
+  "name":"io.github.resilience4j.retry.autoconfigure.RetryMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$19030214$$FastClassBySpringCGLIB$$672c325e",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -1690,7 +1694,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.spelresolver.autoconfigure.SpelResolverConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$9007ce1d",
+  "name":"io.github.resilience4j.spelresolver.autoconfigure.SpelResolverConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$682256ab",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1698,7 +1702,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.spelresolver.autoconfigure.SpelResolverConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$9007ce1d$$FastClassBySpringCGLIB$$6ffc4aca",
+  "name":"io.github.resilience4j.spelresolver.autoconfigure.SpelResolverConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$682256ab$$FastClassBySpringCGLIB$$e298463b",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -1743,7 +1747,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterAutoConfiguration$$EnhancerBySpringCGLIB$$23942f75",
+  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterAutoConfiguration$$EnhancerBySpringCGLIB$$fbaeb803",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1758,7 +1762,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterAutoConfiguration$TimeLimiterAutoEndpointConfiguration$$EnhancerBySpringCGLIB$$40e3a7bc",
+  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterAutoConfiguration$TimeLimiterAutoEndpointConfiguration$$EnhancerBySpringCGLIB$$18fe304a",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1773,7 +1777,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$ab330729",
+  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$834d8fb7",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1781,7 +1785,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$ab330729$$FastClassBySpringCGLIB$$afd42e7a",
+  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterConfigurationOnMissingBean$$EnhancerBySpringCGLIB$$834d8fb7$$FastClassBySpringCGLIB$$5aeacf59",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -1796,7 +1800,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$d5ec474c",
+  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$ae06cfda",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -1804,7 +1808,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$d5ec474c$$FastClassBySpringCGLIB$$8fd4b969",
+  "name":"io.github.resilience4j.timelimiter.autoconfigure.TimeLimiterMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$ae06cfda$$FastClassBySpringCGLIB$$e6876812",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -2352,7 +2356,8 @@
   "allDeclaredMethods":true
 },
 {
-  "name":"io.swagger.v3.oas.annotations.OpenAPIDefinition"
+  "name":"io.swagger.v3.oas.annotations.OpenAPIDefinition",
+  "allDeclaredMethods":true
 },
 {
   "name":"io.swagger.v3.oas.annotations.Operation",
@@ -2384,7 +2389,16 @@
   "allDeclaredMethods":true
 },
 {
-  "name":"io.swagger.v3.oas.annotations.info.Info"
+  "name":"io.swagger.v3.oas.annotations.info.Contact",
+  "allDeclaredMethods":true
+},
+{
+  "name":"io.swagger.v3.oas.annotations.info.Info",
+  "allDeclaredMethods":true
+},
+{
+  "name":"io.swagger.v3.oas.annotations.info.License",
+  "allDeclaredMethods":true
 },
 {
   "name":"io.swagger.v3.oas.annotations.links.Link",
@@ -2708,7 +2722,7 @@
   ]
 },
 {
-  "name":"java.lang.ClassLoader$ByteBuddyAccessor$ScBcqf5d",
+  "name":"java.lang.ClassLoader$ByteBuddyAccessor$FbGV0jSN",
   "methods":[
     {"name":"defineClass","parameterTypes":["java.lang.ClassLoader","java.lang.String","byte[]","int","int","java.security.ProtectionDomain"] }, 
     {"name":"definePackage","parameterTypes":["java.lang.ClassLoader","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.net.URL"] }, 
@@ -4282,9 +4296,6 @@
   "allPublicMethods":true
 },
 {
-  "name":"org.springframework.aot.StaticSpringFactories"
-},
-{
   "name":"org.springframework.beans.BeansException"
 },
 {
@@ -4661,13 +4672,13 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$$Lambda$1264/0x00000008407d9840",
+  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$$Lambda$1259/0x00000008407d8840",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
 },
 {
-  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$$Lambda$1265/0x00000008407d9c40",
+  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$$Lambda$1260/0x00000008407d8c40",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -4680,7 +4691,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$KafkaStreamsMetricsConfiguration$$Lambda$1263/0x00000008407d9440",
+  "name":"org.springframework.boot.actuate.autoconfigure.metrics.KafkaMetricsAutoConfiguration$KafkaStreamsMetricsConfiguration$$Lambda$1258/0x00000008407d8440",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -5623,7 +5634,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$1095/0x0000000840725440",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$DefaultCodecsConfiguration$$Lambda$1090/0x000000084072d440",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -5636,7 +5647,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$1096/0x0000000840724840",
+  "name":"org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration$$Lambda$1091/0x000000084072c840",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -6737,7 +6748,7 @@
   "allPublicMethods":true
 },
 {
-  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$764/0x0000000840539440",
+  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$759/0x0000000840540040",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -7010,14 +7021,14 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.cloud.function.context.config.KotlinLambdaToFunctionAutoConfiguration$$EnhancerBySpringCGLIB$$28621190",
+  "name":"org.springframework.cloud.function.context.config.KotlinLambdaToFunctionAutoConfiguration$$EnhancerBySpringCGLIB$$7c9a1e",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true,
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"org.springframework.cloud.function.context.config.KotlinLambdaToFunctionAutoConfiguration$$EnhancerBySpringCGLIB$$28621190$$FastClassBySpringCGLIB$$621a723d",
+  "name":"org.springframework.cloud.function.context.config.KotlinLambdaToFunctionAutoConfiguration$$EnhancerBySpringCGLIB$$7c9a1e$$FastClassBySpringCGLIB$$cacf382c",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -7164,7 +7175,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$f1afad6f",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$c9ca35fd",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -7172,7 +7183,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$f1afad6f$$FastClassBySpringCGLIB$$5e2067a8",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$c9ca35fd$$FastClassBySpringCGLIB$$d0bc6319",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -7180,7 +7191,7 @@
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
-  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$806/0x0000000840561840",
+  "name":"org.springframework.cloud.stream.binder.kafka.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$801/0x00000008405abc40",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -7220,7 +7231,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.cloud.stream.binder.test.TestChannelBinderConfiguration$$EnhancerBySpringCGLIB$$b7c6635c",
+  "name":"org.springframework.cloud.stream.binder.test.TestChannelBinderConfiguration$$EnhancerBySpringCGLIB$$8fe0ebea",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -7228,7 +7239,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"org.springframework.cloud.stream.binder.test.TestChannelBinderConfiguration$$EnhancerBySpringCGLIB$$b7c6635c$$FastClassBySpringCGLIB$$add8b50b",
+  "name":"org.springframework.cloud.stream.binder.test.TestChannelBinderConfiguration$$EnhancerBySpringCGLIB$$8fe0ebea$$FastClassBySpringCGLIB$$5c57714a",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -9539,7 +9550,7 @@
   "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder"
 },
 {
-  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$1109/0x0000000840721c40",
+  "name":"org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$1104/0x0000000840729c40",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true
@@ -10136,7 +10147,7 @@
   "allDeclaredClasses":true
 },
 {
-  "name":"se.magnus.microservices.composite.product.ProductCompositeServiceApplication$$EnhancerBySpringCGLIB$$17068bd9",
+  "name":"se.magnus.microservices.composite.product.ProductCompositeServiceApplication$$EnhancerBySpringCGLIB$$ef211467",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -10144,7 +10155,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"se.magnus.microservices.composite.product.ProductCompositeServiceApplication$$EnhancerBySpringCGLIB$$17068bd9$$FastClassBySpringCGLIB$$67cccf26",
+  "name":"se.magnus.microservices.composite.product.ProductCompositeServiceApplication$$EnhancerBySpringCGLIB$$ef211467$$FastClassBySpringCGLIB$$3aee283f",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -10159,7 +10170,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"se.magnus.microservices.composite.product.SecurityConfig$$EnhancerBySpringCGLIB$$347c1108",
+  "name":"se.magnus.microservices.composite.product.SecurityConfig$$EnhancerBySpringCGLIB$$c969996",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -10175,7 +10186,7 @@
   "allDeclaredClasses":true
 },
 {
-  "name":"se.magnus.microservices.composite.product.TestSecurityConfig$$EnhancerBySpringCGLIB$$c91178fa",
+  "name":"se.magnus.microservices.composite.product.TestSecurityConfig$$EnhancerBySpringCGLIB$$a12c0188",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allPublicMethods":true,
@@ -10183,7 +10194,7 @@
   "fields":[{"name":"CGLIB$FACTORY_DATA"}]
 },
 {
-  "name":"se.magnus.microservices.composite.product.TestSecurityConfig$$EnhancerBySpringCGLIB$$c91178fa$$FastClassBySpringCGLIB$$41c154cc",
+  "name":"se.magnus.microservices.composite.product.TestSecurityConfig$$EnhancerBySpringCGLIB$$a12c0188$$FastClassBySpringCGLIB$$cf3f423c",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -10198,7 +10209,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"se.magnus.microservices.composite.product.services.ProductCompositeIntegration$$EnhancerBySpringCGLIB$$be414707",
+  "name":"se.magnus.microservices.composite.product.services.ProductCompositeIntegration$$EnhancerBySpringCGLIB$$ef409393",
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true,
   "fields":[
@@ -10207,7 +10218,7 @@
   ]
 },
 {
-  "name":"se.magnus.microservices.composite.product.services.ProductCompositeIntegration$$EnhancerBySpringCGLIB$$be414707$$FastClassBySpringCGLIB$$634bda6c",
+  "name":"se.magnus.microservices.composite.product.services.ProductCompositeIntegration$$EnhancerBySpringCGLIB$$ef409393$$FastClassBySpringCGLIB$$cfc9bcb3",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
@@ -10215,7 +10226,7 @@
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Class"] }]
 },
 {
-  "name":"se.magnus.microservices.composite.product.services.ProductCompositeIntegration$MockitoMock$2085531782",
+  "name":"se.magnus.microservices.composite.product.services.ProductCompositeIntegration$MockitoMock$969612472",
   "allDeclaredMethods":true,
   "methods":[
     {"name":"createProduct","parameterTypes":["se.magnus.api.core.product.Product"] }, 
