@@ -1,7 +1,7 @@
 helm:
   parameters:
   - name: product-composite.image.name
-    value: 551.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on/native-product-composite-service
+    value: native-product-composite-service
     forcestring: true
   - name: product-composite.image.tag
     value: 9dab62848fbca436f3669d6ca4b090dd7537be68
