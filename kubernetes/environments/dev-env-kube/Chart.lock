@@ -1,0 +1,33 @@
+dependencies:
+- name: common
+  repository: file://helm/common
+  version: 1.0.0
+- name: rabbitmq
+  repository: file://helm/components/rabbitmq
+  version: 1.0.0
+- name: mongodb
+  repository: file://helm/components/mongodb
+  version: 1.0.0
+- name: mysql
+  repository: file://helm/components/mysql
+  version: 1.0.0
+- name: auth-server
+  repository: file://helm/components/auth-server
+  version: 1.0.0
+- name: product
+  repository: file://helm/components/product
+  version: 1.0.0
+- name: recommendation
+  repository: file://helm/components/recommendation
+  version: 1.0.0
+- name: review
+  repository: file://helm/components/review
+  version: 1.0.0
+- name: product-composite
+  repository: file://helm/components/product-composite
+  version: 1.0.0
+- name: zipkin-server
+  repository: file://helm/components/zipkin-server
+  version: 1.0.0
+digest: sha256:86fae2e3e8f586b27d9f00a020b550b6c1fd27034aa7215c24bc680088ca2549
+generated: "2023-06-09T16:38:18.561758415+09:00"

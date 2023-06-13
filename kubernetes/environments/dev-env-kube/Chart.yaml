@@ -1,0 +1,47 @@
+apiVersion: v2
+appVersion: "1.0"
+description: A Helm chart for HANDS-ON MICROSERVICES WITH SPRING BOOT AND SPRING CLOUD running in a Dev and Test Environment
+name: dev-env
+version: 1.0.0
+
+dependencies:
+
+  - name: common
+    version: 1.0.0
+    repository: file://helm/common
+
+  - name: rabbitmq
+    version: 1.0.0
+    repository: file://helm/components/rabbitmq
+
+  - name: mongodb
+    version: 1.0.0
+    repository: file://helm/components/mongodb
+
+  - name: mysql
+    version: 1.0.0
+    repository: file://helm/components/mysql
+
+  - name: auth-server
+    version: 1.0.0
+    repository: file://helm/components/auth-server
+
+  - name: product
+    version: 1.0.0
+    repository: file://helm/components/product
+
+  - name: recommendation
+    version: 1.0.0
+    repository: file://helm/components/recommendation
+
+  - name: review
+    version: 1.0.0
+    repository: file://helm/components/review
+
+  - name: product-composite
+    version: 1.0.0
+    repository: file://helm/components/product-composite
+
+  - name: zipkin-server
+    version: 1.0.0
+    repository: file://helm/components/zipkin-server

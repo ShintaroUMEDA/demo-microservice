@@ -11,6 +11,7 @@ metadata:
 managedNodeGroups:
   - name: sample-node
     instanceType: t2.medium
+    desiredCapacity: 11
     volumeSize: 20
     ssh:
       allow: true
@@ -28,3 +29,4 @@ managedNodeGroups:
         sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
         sudo systemctl enable amazon-ssm-agent
         sudo systemctl start amazon-ssm-agent
+

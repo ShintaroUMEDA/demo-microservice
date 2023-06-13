@@ -6,7 +6,7 @@ metadata:
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/app.pull-secret: secret:argocd/aws-ecr-creds#creds
     argocd-image-updater.argoproj.io/image-list: app=550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on/native-product-composite-service
-    argocd-image-updater.argoproj.io/app.update-strategy: name
+    argocd-image-updater.argoproj.io/app.update-strategy: latest
     # argocd-image-updater.argoproj.io/app.force-update: 'true'
     # argocd-image-updater.argoproj.io/app.helm.image-name: product-composite.image.name
     argocd-image-updater.argoproj.io/app.helm.image-tag: product-composite.image.tag
@@ -16,7 +16,7 @@ spec:
     namespace: argo-test
     server: 'https://kubernetes.default.svc'
   source:
-    path: kubernetes/environments/dev-env-native
+    path: kubernetes/environments/dev-env
     repoURL: 'git@github.com:ShintaroUMEDA/demo-microservice.git'
     targetRevision: helm_test
   sources: []
