@@ -1,8 +1,8 @@
 helm:
   parameters:
-  - name: image.name
+  - name: product-composite.image.name
     value: native-product-composite-service
     forcestring: true
-  - name: image.tag
+  - name: product-composite.image.tag
     value: 2b44da3691f05e681474024bf0e2bf3eb2fa0fb0
     forcestring: true
