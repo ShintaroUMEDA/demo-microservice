@@ -68,6 +68,7 @@ auth-server:
 product:
   image:
     name: product-service
+    tag: 2.0.0
   env:
     SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_0,kafka"
   envFromSecretRefs:
@@ -77,6 +78,7 @@ product:
 recommendation:
   image:
     name: recommendation-service
+    tag: 2.0.0
   env:
     SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_0,kafka"
   envFromSecretRefs:
@@ -86,6 +88,7 @@ recommendation:
 review:
   image:
     name: review-service
+    tag: 2.0.0
   env:
     SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,streaming_instance_0,kafka"
   envFromSecretRefs:
@@ -95,6 +98,7 @@ review:
 product-composite:
   image:
     name: product-composite-service
+    tag: 2.0.0
   env:
     SPRING_PROFILES_ACTIVE: "docker,streaming_partitioned,kafka"
   readinessProbe:
