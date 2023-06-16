@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: aws-creds
-  namespace: argo-test
+  namespace: argocd
   annotations:
     avp.kubernetes.io/path: "demo-ms-secrets"
 data:
