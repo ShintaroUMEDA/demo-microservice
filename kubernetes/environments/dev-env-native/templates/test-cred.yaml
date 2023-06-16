@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: aws-creds
-  namespace: argocd
+  namespace: argo-test
   annotations:
     avp.kubernetes.io/path: "demo-ms-secrets"
-data:
-  AWS_ACCESS_KEY_ID : <AWS_ACCESS_KEY_ID | base64encode>
-  AWS_SECRET_ACCESS_KEY : <AWS_SECRET_ACCESS_KEY | base64encode>
-  AWS_ACCOUNT_ID : <AWS_ACCOUNT_ID | base64encode>
-  AWS_REGION : <AWS_REGION | base64encode>
+stringData:
+  AWS_ACCESS_KEY_ID : <AWS_ACCESS_KEY_ID>
+  AWS_SECRET_ACCESS_KEY : <AWS_SECRET_ACCESS_KEY>
+  AWS_ACCOUNT_ID : <AWS_ACCOUNT_ID>
+  AWS_REGION : <AWS_REGION>
