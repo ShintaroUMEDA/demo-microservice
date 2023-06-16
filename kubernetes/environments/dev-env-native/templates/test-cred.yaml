@@ -4,7 +4,7 @@ metadata:
   name: aws-creds
   namespace: argo-test
 stringData:
-  AWS_ACCESS_KEY_ID : <path:demo-ms-secrets#AWS_ACCESS_KEY_ID>
-  AWS_SECRET_ACCESS_KEY : <path:demo-ms-secrets#AWS_SECRET_ACCESS_KEY>
-  AWS_ACCOUNT_ID : <path:demo-ms-secrets#AWS_ACCOUNT_ID>
-  AWS_REGION : <path:demo-ms-secrets#AWS_REGION>
+  AWS_ACCESS_KEY_ID : <path:kv-v2/data/demo#AWS_ACCESS_KEY_ID>
+  AWS_SECRET_ACCESS_KEY : <path:kv-v2/data/demo#AWS_SECRET_ACCESS_KEY>
+  AWS_ACCOUNT_ID : <path:kv-v2/data/demo#AWS_ACCOUNT_ID>
+  AWS_REGION : <path:kv-v2/data/demo#AWS_REGION>
