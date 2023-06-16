@@ -3,10 +3,8 @@ kind: Secret
 metadata:
   name: aws-creds
   namespace: argo-test
-  annotations:
-    avp.kubernetes.io/path: "demo-ms-secrets"
 stringData:
-  AWS_ACCESS_KEY_ID : <AWS_ACCESS_KEY_ID>
-  AWS_SECRET_ACCESS_KEY : <AWS_SECRET_ACCESS_KEY>
-  AWS_ACCOUNT_ID : <AWS_ACCOUNT_ID>
-  AWS_REGION : <AWS_REGION>
+  AWS_ACCESS_KEY_ID : <path:demo-ms-secrets#AWS_ACCESS_KEY_ID>
+  AWS_SECRET_ACCESS_KEY : <path:demo-ms-secrets#AWS_SECRET_ACCESS_KEY>
+  AWS_ACCOUNT_ID : <path:demo-ms-secrets#AWS_ACCOUNT_ID>
+  AWS_REGION : <path:demo-ms-secrets#AWS_REGION>
