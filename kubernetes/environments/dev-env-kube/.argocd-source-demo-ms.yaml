@@ -1,0 +1,8 @@
+helm:
+  parameters:
+  - name: image.name
+    value: 550013351950.dkr.ecr.ap-northeast-1.amazonaws.com/hands-on/product-composite-service
+    forcestring: true
+  - name: product-composite.image.tag
+    value: 1.0.0
+    forcestring: true
